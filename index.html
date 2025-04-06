@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+</head>
+<body>
+    <!-- Ordered list with Roman numerals -->
+    <h2>Top 3 Programming Languages:</h2>
+    <ol type="I">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ol>
+
+    <!-- External image from Pexels -->
+    <h2>Nature Image:</h2>
+    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+         alt="Beautiful nature scene" 
+         width="400">
+
+    <!-- Contacts table -->
+    <h2>Contact List:</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>555-1234</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Ave</td>
+                <td>555-5678</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>789 Pine Rd</td>
+                <td>555-9012</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice Brown</td>
+                <td>321 Elm Blvd</td>
+                <td>555-3456</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>Charlie Davis</td>
+                <td>654 Maple Ln</td>
+                <td>555-7890</td>
+                <td>charlie@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name field -->
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" 
+                   placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="example@domain.com" required>
+        </div>
+
+        <!-- Password field -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                   placeholder="At least 8 characters" 
+                   minlength="8" required>
+        </div>
+
+        <!-- Date field -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+            </select>
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
